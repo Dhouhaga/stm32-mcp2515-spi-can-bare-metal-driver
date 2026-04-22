@@ -1,5 +1,5 @@
 # stm32-mcp2515-spi-can-bare-metal-driver
-STM32F407 bare-metal CAN bus driver for MCP2515 controller via SPI. Direct register access. No HAL. No middleware.
+STM32F407 bare-metal CAN bus driver for MCP2515 controller via SPI. Features direct register manipulation, external interrupt handling, NVIC configuration, and real-time message processing. No HAL, no middleware. Demonstrates CAN 2.0A protocol and SPI master implementation from scratch.
 
 ## Technical Stack
 
