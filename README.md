@@ -37,8 +37,6 @@ STM32F407 bare-metal CAN bus driver for MCP2515 controller via SPI. Features dir
 0x81 - Request to Send (TXB0)
 0x90 - Read RX Buffer
 
-text
-
 ## Register Configuration Summary
 
 - CANCTRL: Configuration mode (0x80) / Normal mode (0x00)
@@ -56,8 +54,6 @@ text
 
 ## Interrupt Architecture
 PA0 (INT) -> EXTI0 (falling edge) -> NVIC (priority 0) -> ISR
-
-text
 
 Interrupts handled in ISR:
 - RX0IF: Read message from RX buffer, parse content, trigger response
