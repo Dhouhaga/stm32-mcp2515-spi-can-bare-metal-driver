@@ -8,9 +8,9 @@ STM32F407 bare-metal CAN bus driver for MCP2515 controller via SPI. Features dir
 https://github.com/user-attachments/assets/bec745b5-f486-4ed3-8638-c300642418a5
 
 
-- Left board sends "hello" → Green LED blinks  
-- Right board receives → Blue LED flashes, sends "what?"  
-- Left board receives → Blue LED flashes, sends "hello" again  
+- Left board sends "hello" → TX LED blinks  
+- Right board receives → RX LED flashes, sends "what?" → TX LED flashes
+- Left board receives → RXLED flashes, sends "hello" again ...  
 ## Technical Stack
 
 - MCU: STM32F407 (ARM Cortex-M4, 168MHz)
