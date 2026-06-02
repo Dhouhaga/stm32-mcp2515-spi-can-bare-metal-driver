@@ -1,6 +1,16 @@
 # stm32-mcp2515-spi-can-bare-metal-driver
 STM32F407 bare-metal CAN bus driver for MCP2515 controller via SPI. Features direct register manipulation, external interrupt handling, NVIC configuration, and real-time message processing. No HAL, no middleware. Demonstrates CAN 2.0A protocol and SPI master implementation from scratch.
 
+## Demo
+
+**Note:** We can also access the registers' content via Keil uVision's debugging tool to verify what's happening bit by bit (SPI1->SR, SPI1->DR, GPIOD->ODR, etc.)
+
+https://github.com/user-attachments/assets/bec745b5-f486-4ed3-8638-c300642418a5
+
+
+- Left board sends "hello" → Green LED blinks  
+- Right board receives → Blue LED flashes, sends "what?"  
+- Left board receives → Blue LED flashes, sends "hello" again  
 ## Technical Stack
 
 - MCU: STM32F407 (ARM Cortex-M4, 168MHz)
